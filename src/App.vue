@@ -5,6 +5,9 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    
+    <!-- 子应用容器 -->
+    <div id="childContainer"></div>
   </div>
 </template>
 
