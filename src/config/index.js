@@ -1,4 +1,5 @@
 import { registerMicroApps, start } from "qiankun";
+import store from '@/store'
 
 registerMicroApps([
   {
@@ -6,6 +7,7 @@ registerMicroApps([
     entry: "//localhost:5555",
     container: "#childContainer",
     activeRule: "/child-a",
+    props: { parentStore: store }
   },
 ]);
 

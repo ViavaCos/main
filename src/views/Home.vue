@@ -5,10 +5,10 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
-  name: 'Home'
+  name: 'Home',
+
 }
 </script>
 
@@ -16,9 +16,11 @@ export default {
 .home {
   width: 100%;
   height: 350px;
-  line-height: 350px;
-  font-size: 150px;
   color: #fff;
   background-color: lightgreen;
+}
+h1{
+  line-height: 300px;
+  font-size: 150px;
 }
 </style>
