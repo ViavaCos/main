@@ -1,12 +1,16 @@
-import { registerMicroApps, start } from 'qiankun'
+import { registerMicroApps, start } from "qiankun";
 
 registerMicroApps([
-    {
-        name: "child-a",
-        entry: "//localhost:5555",
-        container: "#childContainer",
-        activeRule: "/child-a"
-    }
-])
+  {
+    name: "child-a",
+    entry: "//localhost:5555",
+    container: "#childContainer",
+    activeRule: "/child-a",
+  },
+]);
 
-start()
+start({
+  sandbox: {
+    experimentalStyleIsolation: true
+  },
+});
