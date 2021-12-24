@@ -5,7 +5,7 @@ import "./config/index" // 注册子应用
 import store from './store'
 
 Vue.config.productionTip = false
-window.Vue.prototype.$test = { name: 'Main' }
+Vue.prototype.$test = { name: 'Main' }
 
 const instance = new Vue({
   router,
