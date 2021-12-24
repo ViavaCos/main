@@ -7,13 +7,16 @@
       <div id="nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link> |
-        <router-link to="/child-a/">child-home</router-link> |
-        <router-link to="/child-a/about">child-about</router-link>
+        <router-link to="/child-a/">child-a-home</router-link> |
+        <router-link to="/child-a/about">child-a-about</router-link> |
+        <router-link to="/child-b/">child-b-home</router-link> |
+        <router-link to="/child-b/about">child-b-about</router-link>
       </div>
       <router-view />
 
       <!-- 子应用容器 -->
-      <div id="childContainer"></div>
+      <div id="childContainerA"></div>
+      <div id="childContainerB"></div>
     </div>
   </div>
 </template>

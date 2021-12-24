@@ -2,6 +2,8 @@
   <div id="app">
     <button @click="change(1)">Add</button>|<button @click="change(0)">minus</button>
     <p v-for="(item, index) in getArr" :key="index">{{ item.data }}</p>
+    <button @click="test">Get_M</button>
+
     <layout />
   </div>
 </template>
@@ -33,6 +35,9 @@ export default {
 
       oldData = oldData.filter(item => item !== oldData[oldData.length - 1])
       this.setArr(oldData)
+    },
+    test(){
+      console.log(this.$test, window.Vue.prototype.$test);
     }
   }
 };
