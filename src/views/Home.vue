@@ -8,7 +8,9 @@
 
 export default {
   name: 'Home',
-
+  mounted(){
+    console.log('Main-store', this.$store);
+  }
 }
 </script>
 
@@ -16,8 +18,8 @@ export default {
 .home {
   width: 100%;
   height: 350px;
-  color: #fff;
-  background-color: lightgreen;
+  color: #ccc;
+  /* background-color: lightgreen; */
 }
 h1{
   line-height: 300px;
